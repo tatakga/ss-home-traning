@@ -1,0 +1,144 @@
+.header {
+  #{&}__info {
+    font-size: 14px;
+
+    & a {
+      color: #ffffff;
+    }
+  }
+  #{&}__logo {
+    max-width: 200px;
+    height: auto;
+
+    @include responsive(tablet) {
+      max-width: 350px;
+    }
+  }
+  & .navbar {
+    padding: 0;
+    &-toggler {
+      border: solid 1px #ffffff;
+      color: #fff;
+    }
+    &-toggle-icon {
+      width: 30px;
+      height: 30px;
+    }
+    a {
+      color: #ffffff;
+    }
+
+    .dropdown-menu {
+      background-color: #dc3545;
+    }
+
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+      background-color: #d60b1f;
+    }
+  }
+}
+
+.footer {
+  #{&}__top {
+    padding: 4.3125rem 0;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 1rem;
+      padding: 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  #{&}__bottom {
+    background-color: #f0f0f0;
+    padding: 1.5rem 0;
+  }
+  #{&}__links {
+    a {
+      color: #333333;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:not(:last-child) {
+        margin-right: 1.875rem;
+      }
+    }
+  }
+  #{&}__social__links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    background-color: #231f20;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+
+.search-column {
+  display: flex;
+  flex-direction: column;
+  @include responsive(tablet) {
+    flex-direction: row;
+  }
+}
+
+.content {
+  padding: 50px 0;
+  &__title {
+    color: #333333;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.additional .owl-carousel .owl-stage-outer {
+  overflow: hidden;
+}
+
+.carousel__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffbc27;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &.left {
+    left: -10px;
+    @include responsive(tablet) {
+      left: -25px;
+    }
+  }
+  &.right {
+    right: -10px;
+    @include responsive(tablet) {
+      right: -25px;
+    }
+  }
+}
+
+// .select2-container--default .select2-selection--single {
+//   border: none;
+// }
+
+// .select2-container--default .select2-selection--single {
+//   text-align: left;
+// }

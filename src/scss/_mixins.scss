@@ -1,0 +1,8 @@
+@mixin responsive($device-type) {
+  @if map-has-key($breakpoints, $device-type) {
+    $device-type: map-get($breakpoints, $device-type);
+    @media screen and (min-width: $device-type) {
+      @content;
+    }
+  }
+}
