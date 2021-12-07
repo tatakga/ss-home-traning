@@ -25,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
-<body data-spy="scroll" data-target="#navbar" class="static-layout home">
+<body data-spy="scroll" data-target="#navbar" class="static-layout calendar">
 	<header class="header">
   <!-- Header More Info -->
   <div class="bg-dark py-2 text-white header__info">
@@ -108,79 +108,115 @@
     </div>
   </div>
 </header>
-	<section class="home__hero">
+	<section class="calendar__hero">
   <div class="container">
-    <div class="content">
-      <div class="search__box">
-        <h1>Search for location and course</h1>
-        <form>
-          <div class="input-group select2-bootstrap-prepend">
-            <span class="input-group-addon"
-              ><i class="fa fa-fw fa-globe"></i
-            ></span>
-            <select
-              id="join_country"
-              name="join_country"
-              class="form-control"
-              value=""
-              required="required"
-            >
-              <option></option>
-              <option>01</option>
-              <option>02</option>
-            </select>
-          </div>
-          <!-- <select class="state-select form-control" name="state">
-            <option></option>
-            <option>Jakarta</option>
-            <option>Bandung</option>
-            <option>Yogyakarta</option>
-            <option>Surabaya</option>
-            <option>Semarang</option>
-            <option>Malang</option>
-          </select> -->
-          <!-- <select class="course-select" name="state">
-            <option></option>
-            <option>Coding</option>
-            <option>Cooking</option>
-            <option>Writing</option>
-            <option>Speaking</option>
-          </select>
-          <button class="btn-submit-search">Search</button> -->
-        </form>
-      </div>
+    <div class="calendar__hero__box">
+      <h1>QLD Certificate of Registration</h1>
     </div>
+    <p class="text-white mb-0">
+      Note: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      posuere ante sit amet mollis posuere. Maecenas tristique tortor fermentum,
+      cursus erat non, bibendum nulla. Nulla facilisi. Nam eget luctus justo,
+      sed molestie eros. Aenean non lobortis nisi, vitae viverra dolor. Proin
+      tristique est massa, non cursus elit feugiat id.
+    </p>
   </div>
 </section>
-	<section class="content">
+	<section class="calendar__content">
   <div class="container">
-    <h2 class="content__title">Upcoming Course</h2>
-    <div class="owl-carousel upcoming-carousel">
-      <div class="card">
-        <img class="card-img-top" src="./img/img-hero-card-3.png" alt="" />
-        <div class="card-body">
-          <h5 class="card-title">Property Management Basic</h5>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/img-hero-card-2.png" alt="" />
-        <div class="card-body">
-          <h5 class="card-title">Property Management Basic</h5>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/img-hero-card-1.png" alt="" />
-        <div class="card-body">
-          <h5 class="card-title">Property Management Basic</h5>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/img-hero-card-2.png" alt="" />
-        <div class="card-body">
-          <h5 class="card-title">Property Management Basic</h5>
-        </div>
-      </div>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Course</th>
+            <th scope="col">Location</th>
+            <th scope="col">Category</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>13 Aug 2019</td>
+            <td>Agency Legislation & Risk</td>
+            <td>Think Real Estate, Kogarah</td>
+            <td>
+              NSW Licence Qualification Course - Agency Legislation & Risk
+            </td>
+            <td>
+              <a href="#" class="text-danger">Enrol now</a>
+            </td>
+          </tr>
+          <tr>
+            <td>13 Aug 2019</td>
+            <td>Agency Legislation & Risk</td>
+            <td>Think Real Estate, Kogarah</td>
+            <td>
+              NSW Licence Qualification Course - Agency Legislation & Risk
+            </td>
+            <td>
+              <a href="#" class="text-danger">Enrol now</a>
+            </td>
+          </tr>
+          <tr>
+            <td>13 Aug 2019</td>
+            <td>Agency Legislation & Risk</td>
+            <td>Think Real Estate, Kogarah</td>
+            <td>
+              NSW Licence Qualification Course - Agency Legislation & Risk
+            </td>
+            <td>
+              <a href="#" class="text-danger">Enrol now</a>
+            </td>
+          </tr>
+          <tr>
+            <td>13 Aug 2019</td>
+            <td>Agency Legislation & Risk</td>
+            <td>Think Real Estate, Kogarah</td>
+            <td>
+              NSW Licence Qualification Course - Agency Legislation & Risk
+            </td>
+            <td>
+              <a href="#" class="text-danger">Enrol now</a>
+            </td>
+          </tr>
+          <tr>
+            <td>13 Aug 2019</td>
+            <td>Agency Legislation & Risk</td>
+            <td>Think Real Estate, Kogarah</td>
+            <td>
+              NSW Licence Qualification Course - Agency Legislation & Risk
+            </td>
+            <td>
+              <a href="#" class="text-danger">Enrol now</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item"><a class="text-danger" href="#">Previous</a></li>
+        <div class="d-flex">
+          <li class="page-item">
+            <a class="pagination__button" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a class="pagination__button" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="pagination__button active" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="pagination__button" href="#">4</a>
+          </li>
+          <li class="page-item">
+            <a class="pagination__button" href="#">5</a>
+          </li>
+        </div>
+        <li class="page-item"><a class="text-danger" href="#">Next</a></li>
+      </ul>
+    </nav>
   </div>
 </section>
 </div>

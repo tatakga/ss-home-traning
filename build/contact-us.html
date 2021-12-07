@@ -25,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
-<body data-spy="scroll" data-target="#navbar" class="static-layout catalogue">
+<body data-spy="scroll" data-target="#navbar" class="static-layout contact">
 	<header class="header">
   <!-- Header More Info -->
   <div class="bg-dark py-2 text-white header__info">
@@ -108,193 +108,246 @@
     </div>
   </div>
 </header>
-	<section class="catalogue__hero">
-  <div class="container-fluid">
-    <div class="d-flex justify-content-end">
-      <div class="content">
-        <h1>Course Delivery Method</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          posuere ante sit amet mollis posuere. Maecenas tristique tortor
-          fermentum, cursus erat non, bibendum nulla. Nulla facilisi. Nam eget
-          luctus justo, sed molestie eros. Aenean non lobortis nisi, vitae
-          viverra dolor. Proin tristique est massa, non cursus elit feugiat id.
-          Curabitur vel nisi id justo rhoncus efficitur.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-	<section class="content">
+	<section class="contact__info__form">
   <div class="container">
-    <h2 class="content__title">Course Catalogue</h2>
-    <div class="catalogue__grid">
-      <div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./img/img-card-catalogue-1.png"
-            alt="NSW Courses"
-          />
-          <div class="card-body position-relative">
-            <a href="#" class="catalogue__card__links">NSW Courses</a>
-            <div class="more-info">
-              <p class="text-center mb-0">
-                NSW License Course NSW Certificate of Registration NSW Diploma
-                Course NSW CPD Course
-              </p>
-            </div>
-          </div>
+    <h2 class="content__title">Contact Us</h2>
+    <div class="row">
+      <div class="col-12 col-md-3 mb-3 mg-lg-0">
+        <div class="mb-3">
+          <h4 class="mb-3">Phone</h4>
+          <p class="contact__details phone">AUS 02 9057 8040</p>
+        </div>
+        <div class="mb-3">
+          <h4 class="mb-3">Phone</h4>
+          <p class="contact__details address">
+            <span class="font-weight-bold">ProposalPoint Pty Ltd</span
+            ><br />Level 3<br />100 Harris Street<br />Pyrmont, NSW 2009
+          </p>
         </div>
       </div>
-      <div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./img/img-card-catalogue-2.png"
-            alt="QLD Courses"
-          />
-          <div class="card-body position-relative">
-            <a
-              href="qld-certificate-registration.html"
-              class="catalogue__card__links"
-              >QLD Courses</a
-            >
-            <div class="more-info">
-              <p class="text-center mb-0">
-                QLD License Course QLD Certificate of Registration QLD Diploma
-                Course
-              </p>
+      <div class="col-12 col-md-9">
+        <h4 class="mb-3">Get in Touch</h4>
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="phone"
+                  placeholder="Phone"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./img/img-card-catalogue-3.png"
-            alt="VIC Courses"
-          />
-          <div class="card-body position-relative">
-            <a href="#" class="catalogue__card__links">VIC Courses</a>
-            <div class="more-info">
-              <p class="text-center mb-0">
-                VIC License Course VIC Certificate of Registration VIC Diploma
-                Course
-              </p>
+          <div class="form-group">
+            <textarea
+              class="form-control form-control-lg"
+              id="message"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <select
+                  class="form-control form-control-lg"
+                  id="exampleFormControlSelect1"
+                >
+                  <option disabled selected hidden>How did you find us?</option>
+                  <option>Linked In</option>
+                  <option>Jobstreet</option>
+                  <option>Social Media</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <select
+                  class="form-control form-control-lg"
+                  id="exampleFormControlSelect2"
+                >
+                  <option disabled selected hidden>
+                    What best describes you?
+                  </option>
+                  <option>Smart</option>
+                  <option>Active</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./img/img-card-catalogue-4.png"
-            alt="ACT Courses"
-          />
-          <div class="card-body position-relative">
-            <a href="#" class="catalogue__card__links">ACT Courses</a>
-            <div class="more-info">
-              <p class="text-center mb-0">
-                ACT License Course ACT Certificate of Registration ACT Diploma
-                Course ACT CPD Course
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./img/img-card-catalogue-4.png"
-            alt="Other State Courses"
-          />
-          <div class="card-body position-relative">
-            <a href="#" class="catalogue__card__links">Other State Courses</a>
-          </div>
-        </div>
+          <button class="btn btn-danger btn-lg">SEND</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
 
-<section class="services">
+<section class="contact__faq">
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="services__card">
-          <h3 class="services__title">Certificate of registration</h3>
-          <img
-            class="img-fluid"
-            src="./img/img-service-catalogue-1.png"
-            alt=""
-          />
-          <div class="services__info">
-            <h3>Certificate of registration</h3>
-            <p>(Certificate IV in Property Services -Real Estate)</p>
-            <div class="services__links">
-              <a href="#" class="services__links__item danger">Online</a>
-              <a href="#" class="services__links__item">In-Class</a>
-            </div>
+    <h2 class="content__title">Common Questions & Answers</h2>
+
+    <div class="accordion" id="faq">
+      <div class="card">
+        <div class="card-header" id="faqhead1">
+          <a
+            href="#"
+            data-target="#faq1"
+            aria-expanded="true"
+            aria-controls="faq1"
+            data-toggle="collapse"
+            >Can I cancel at anytime?
+            <div class="accordion__arrow"></div>
+          </a>
+        </div>
+        <div
+          id="faq1"
+          class="collapse"
+          aria-labelledby="faqhead1"
+          data-parent="#faq"
+        >
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam perferendis aspernatur quaerat! Incidunt explicabo saepe
+              modi quibusdam tenetur quisquam magni quis reprehenderit
+              architecto?
+            </p>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
-        <div class="services__card">
-          <h3 class="services__title">Licensing course</h3>
-          <img
-            class="img-fluid"
-            src="./img/img-service-catalogue-2.png"
-            alt=""
-          />
-          <div class="services__info">
-            <h3>Licensing course</h3>
-            <p>(Certificate IV in Property Services -Real Estate)</p>
-            <div class="services__links">
-              <a href="#" class="services__links__item danger">Online</a>
-              <a href="#" class="services__links__item">In-Class</a>
-            </div>
+
+      <div class="card">
+        <div class="card-header" id="faqhead2">
+          <a
+            href="#"
+            data-target="#faq2"
+            aria-expanded="true"
+            aria-controls="faq2"
+            data-toggle="collapse"
+            >Is there a cost for multiple Team Members?
+            <div class="accordion__arrow"></div>
+          </a>
+        </div>
+        <div
+          id="faq2"
+          class="collapse"
+          aria-labelledby="faqhead2"
+          data-parent="#faq"
+        >
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam perferendis aspernatur quaerat! Incidunt explicabo saepe
+              modi quibusdam tenetur quisquam magni quis reprehenderit
+              architecto?
+            </p>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
-        <div class="services__card">
-          <h3 class="services__title">Diploma in Property Services</h3>
-          <img
-            class="img-fluid"
-            src="./img/img-service-catalogue-3.png"
-            alt=""
-          />
-          <div class="services__info">
-            <h3>Diploma in Property Services</h3>
-            <p>(Certificate IV in Property Services -Real Estate)</p>
-            <div class="services__links">
-              <a href="#" class="services__links__item danger">Online</a>
-              <a href="#" class="services__links__item">In-Class</a>
-            </div>
+
+      <div class="card">
+        <div class="card-header" id="faqhead3">
+          <a
+            href="#"
+            data-target="#faq3"
+            aria-expanded="true"
+            aria-controls="faq3"
+            data-toggle="collapse"
+            >Is there a discount for multiple businesses?
+            <div class="accordion__arrow"></div>
+          </a>
+        </div>
+        <div
+          id="faq3"
+          class="collapse"
+          aria-labelledby="faqhead3"
+          data-parent="#faq"
+        >
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam perferendis aspernatur quaerat! Incidunt explicabo saepe
+              modi quibusdam tenetur quisquam magni quis reprehenderit
+              architecto?
+            </p>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
-        <div class="services__card">
-          <h3 class="services__title">
-            Continuing Professional Development courses (CPD)
-          </h3>
-          <img
-            class="img-fluid"
-            src="./img/img-service-catalogue-4.png"
-            alt=""
-          />
-          <div class="services__info">
-            <h3>Continuing Professional Development courses (CPD)</h3>
-            <p>(Certificate IV in Property Services -Real Estate)</p>
-            <div class="services__links">
-              <a href="#" class="services__links__item danger">Online</a>
-              <a href="#" class="services__links__item">In-Class</a>
-            </div>
+
+      <div class="card">
+        <div class="card-header" id="faqhead4">
+          <a
+            href="#"
+            data-target="#faq4"
+            aria-expanded="true"
+            aria-controls="faq4"
+            data-toggle="collapse"
+            >What currency will my credit card get charged in?
+            <div class="accordion__arrow"></div>
+          </a>
+        </div>
+        <div
+          id="faq4"
+          class="collapse"
+          aria-labelledby="faqhead4"
+          data-parent="#faq"
+        >
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam perferendis aspernatur quaerat! Incidunt explicabo saepe
+              modi quibusdam tenetur quisquam magni quis reprehenderit
+              architecto?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="faqhead5">
+          <a
+            href="#"
+            data-target="#faq5"
+            aria-expanded="true"
+            aria-controls="faq5"
+            data-toggle="collapse"
+            >Are there any other additional costs?
+            <div class="accordion__arrow"></div>
+          </a>
+        </div>
+        <div
+          id="faq5"
+          class="collapse"
+          aria-labelledby="faqhead5"
+          data-parent="#faq"
+        >
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam perferendis aspernatur quaerat! Incidunt explicabo saepe
+              modi quibusdam tenetur quisquam magni quis reprehenderit
+              architecto?
+            </p>
           </div>
         </div>
       </div>

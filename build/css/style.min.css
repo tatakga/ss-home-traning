@@ -235,6 +235,19 @@
   gap: 20px; }
   .catalogue .catalogue__grid .card {
     box-shadow: 1px 2px 4px #00000029; }
+  .catalogue .catalogue__grid .more-info {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.25s linear;
+    left: 0;
+    right: 0;
+    bottom: -90%;
+    background-color: #ce2029;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px;
+    z-index: 10; }
 
 .catalogue .catalogue__card__links {
   display: inline-flex;
@@ -242,19 +255,408 @@
   align-items: center;
   width: 100%;
   color: #333333;
-  position: relative; }
+  position: relative;
+  text-decoration: none; }
   .catalogue .catalogue__card__links:hover {
-    text-decoration: underline; }
-  .catalogue .catalogue__card__links:after {
+    color: #ce2029; }
+    .catalogue .catalogue__card__links:hover::after {
+      content: url("../img/icon-dropdown-red.svg");
+      transform: rotate(180deg); }
+    .catalogue .catalogue__card__links:hover ~ .more-info {
+      opacity: 1;
+      visibility: visible; }
+  .catalogue .catalogue__card__links::after {
+    transition: all 0.25s linear;
     content: url("../img/icon-dropdown.svg");
     margin-left: 4px; }
 
 .additional .additional__hero {
-  padding: 50px 0; }
+  padding: 50px 0;
+  overflow: hidden; }
+  .additional .additional__hero .owl-carousel {
+    position: relative; }
+  .additional .additional__hero .owl-nav {
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    height: 100%; }
 
 .additional .additional__testimonial {
   background-color: #4d4d4d;
+  color: #ffffff;
+  padding: 50px 0; }
+  @media screen and (min-width: 992px) {
+    .additional .additional__testimonial {
+      padding: 0; } }
+  .additional .additional__testimonial img {
+    max-width: 200px;
+    margin: auto; }
+    @media screen and (min-width: 992px) {
+      .additional .additional__testimonial img {
+        transform: scale(1.2);
+        max-width: 430px; } }
+  .additional .additional__testimonial .testimonial-text {
+    position: relative; }
+    .additional .additional__testimonial .testimonial-text::after {
+      content: url("../img/icon-quote.svg");
+      position: absolute;
+      top: -50px;
+      right: 0; }
+
+.additional p {
+  margin-bottom: 22px; }
+
+.additional p.name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 3px; }
+
+.additional p.job {
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 0; }
+
+.additional .card-body {
+  text-align: center; }
+  .additional .card-body a {
+    color: #000000; }
+    .additional .card-body a:hover {
+      color: #ce2029;
+      text-decoration: underline; }
+
+.additional .policy {
+  padding: 50px 0;
+  background-color: #f5f5f5; }
+
+.additional .careers {
+  padding: 50px 0; }
+  .additional .careers__tabs {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      .additional .careers__tabs {
+        flex-direction: row; } }
+  .additional .careers__title {
+    font-size: 18px; }
+  .additional .careers__description, .additional .careers__requirements, .additional .careers__list {
+    font-size: 14px; }
+  .additional .careers__description, .additional .careers__title {
+    margin-bottom: 20px; }
+  .additional .careers__requirements {
+    font-weight: bold;
+    margin-bottom: 0.5rem; }
+  .additional .careers__list {
+    padding: 0 15px;
+    list-style: none; }
+    .additional .careers__list li:before {
+      content: "\2022";
+      color: #ffbc27;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em; }
+  .additional .careers .nav-tabs {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #cccccc; }
+    @media screen and (min-width: 768px) {
+      .additional .careers .nav-tabs {
+        width: 100%;
+        max-width: 300px; } }
+  .additional .careers .nav-item {
+    margin: 0;
+    flex-grow: 1; }
+  .additional .careers .nav-link {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 16px 20px;
+    border: none; }
+    .additional .careers .nav-link.active {
+      background-color: #cccccc;
+      color: #ce2029;
+      border: none; }
+  .additional .careers .tab-pane {
+    padding: 20px 30px; }
+  @media screen and (min-width: 768px) {
+    .additional .careers .tab-content {
+      border-left: solid 1px #cccccc; } }
+
+.additional .owl-carousel .owl-stage-outer {
+  overflow: visible; }
+
+.additional .owl-item {
+  overflow: hidden; }
+  .additional .owl-item.active {
+    overflow: visible; }
+
+.location .location__sidebar {
+  width: 100%;
+  max-width: 100%;
+  padding: 50px;
+  background-color: #ffffff;
+  overflow: auto;
+  height: 100vh;
+  display: none; }
+  .location .location__sidebar.show {
+    display: block; }
+  @media screen and (min-width: 992px) {
+    .location .location__sidebar {
+      margin-left: 0;
+      display: block;
+      max-width: 460px; } }
+  .location .location__sidebar a:not(.dropdown-toggle) {
+    display: inline-block;
+    color: #333333;
+    margin-bottom: 1rem; }
+  .location .location__sidebar .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+    color: #333333;
+    font-size: 20px; }
+    .location .location__sidebar .dropdown-toggle:hover {
+      text-decoration: none; }
+    .location .location__sidebar .dropdown-toggle::after {
+      content: "";
+      width: 11px;
+      height: 11px;
+      background-image: url("../img/icon-dropdown.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 0.5s linear;
+      transform: rotate(180deg);
+      border: none; }
+    .location .location__sidebar .dropdown-toggle.collapsed::after {
+      transform: rotate(0); }
+
+.location .location__map {
+  flex: 1; }
+  .location .location__map img {
+    object-fit: cover; }
+
+.location .location__toggle__sidebar {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: inline-block; }
+  @media screen and (min-width: 992px) {
+    .location .location__toggle__sidebar {
+      display: none; } }
+  .location .location__toggle__sidebar button {
+    cursor: pointer;
+    background-color: #ce2029;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem; }
+  .location .location__toggle__sidebar img {
+    color: #ffffff; }
+
+.contact .contact__info__form,
+.contact .contact__faq {
   padding: 50px 0; }
 
-.additional .testimonial-item {
+.contact .contact__faq {
+  background-color: #f5f5f5; }
+  .contact .contact__faq .card,
+  .contact .contact__faq .card-header,
+  .contact .contact__faq .card-body {
+    background-color: transparent; }
+  .contact .contact__faq .card {
+    border-width: 0; }
+  .contact .contact__faq .card-header,
+  .contact .contact__faq .card-body {
+    padding: 30px 0; }
+  .contact .contact__faq .card-header {
+    border-bottom: solid 2px #cccccc; }
+  .contact .contact__faq a {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333333; }
+  .contact .contact__faq a:not(.collapsed) .accordion__arrow::before {
+    transform: translateX(-50%) scale(0); }
+  .contact .contact__faq .accordion__arrow {
+    width: 15px;
+    height: 15px;
+    position: relative; }
+    .contact .contact__faq .accordion__arrow::before, .contact .contact__faq .accordion__arrow::after {
+      content: "";
+      position: absolute;
+      background: #d00; }
+    .contact .contact__faq .accordion__arrow::before {
+      transform-origin: center;
+      transition: all 0.25s linear;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%; }
+    .contact .contact__faq .accordion__arrow::after {
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2px;
+      width: 100%; }
+
+.contact select {
+  color: #a1a1a1; }
+
+.contact option:not(:first-of-type) {
+  color: #333333; }
+
+.contact .contact__details {
+  padding-left: 27px;
+  color: #333333;
+  font-size: 16px;
   position: relative; }
+  .contact .contact__details::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 14px; }
+  .contact .contact__details.phone::before {
+    background-image: url("../img/call-answer.svg"); }
+  .contact .contact__details.address::before {
+    background-image: url("../img/placeholder.svg"); }
+
+.qld .qld__hero {
+  background-image: url("../img/img-qld-hero-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0; }
+
+.qld .qld__hero__box {
+  display: inline-block;
+  position: relative;
+  padding: 32px 50px 32px 0;
+  border-radius: 0px 50px 50px 0px;
+  z-index: 3; }
+  .qld .qld__hero__box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 50px 50px 0px; }
+  .qld .qld__hero__box h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 0; }
+
+.qld .qld__content {
+  padding: 50px 0; }
+  .qld .qld__content .card {
+    border-radius: 10px;
+    overflow: hidden;
+    border-width: 0; }
+  .qld .qld__content .card-header {
+    padding: 18px 30px;
+    background-color: #161616;
+    color: #ffffff;
+    font-size: 20px; }
+  .qld .qld__content .card-body {
+    background-color: #f5f5f5;
+    padding: 0 30px; }
+    .qld .qld__content .card-body > div {
+      padding: 30px 0; }
+      .qld .qld__content .card-body > div:not(:last-child) {
+        border-bottom: 1px solid #cecece; }
+
+.calendar .calendar__hero {
+  background-image: url("../img/img-hero-calendar-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0 48px; }
+
+.calendar .calendar__hero__box {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 32px 50px 32px 0;
+  border-radius: 0px 50px 50px 0px;
+  z-index: 3; }
+  .calendar .calendar__hero__box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 50px 50px 0px; }
+  .calendar .calendar__hero__box h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 0; }
+
+.calendar .calendar__content {
+  padding: 50px 0; }
+  .calendar .calendar__content table {
+    background-color: #ffffff;
+    border-spacing: 0 10px;
+    border-collapse: separate; }
+  .calendar .calendar__content th {
+    color: #b8b8b8;
+    font-weight: bold;
+    border-width: 0; }
+  .calendar .calendar__content thead th,
+  .calendar .calendar__content tbody td {
+    padding: 30px; }
+  .calendar .calendar__content tbody td {
+    vertical-align: middle;
+    min-width: 170px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc; }
+    .calendar .calendar__content tbody td:first-child {
+      border-left: 1px solid #dcdcdc; }
+    .calendar .calendar__content tbody td:last-child {
+      border-right: 1px solid #dcdcdc; }
+  .calendar .calendar__content .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .calendar .calendar__content .pagination__button {
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #161616;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 50%;
+      margin: 0 5px; }
+      .calendar .calendar__content .pagination__button:hover, .calendar .calendar__content .pagination__button.active {
+        background-color: #ce2029;
+        color: #ffffff; }

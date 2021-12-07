@@ -12,6 +12,7 @@
     init: function ($) {
       app.select2();
       app.owlCarousel();
+      app.sidebarToggle();
     },
 
     // ======================================================================
@@ -20,9 +21,14 @@
     // ======================================================================
     select2: function () {
       $(document).ready(function () {
+        $("#join_country").select2({
+          minimumResultsForSearch: -1,
+          placeholder: "Country",
+          allowClear: true,
+          theme: "bootstrap",
+        });
         $(".state-select").select2({
           placeholder: "State/Territory",
-          allowClear: true,
         });
         $(".course-select").select2({
           placeholder: "Courses Offered",
@@ -61,6 +67,14 @@
             "<div class='carousel__button left'><img src='./img/icon-left.svg'></div>",
             "<div class='carousel__button right'><img src='./img/icon-right.svg'></div>",
           ],
+        });
+      });
+    },
+
+    sidebarToggle: function () {
+      $(document).ready(function () {
+        $(".location__toggle__sidebar").click(function () {
+          $(".location__sidebar").toggle("show");
         });
       });
     },
