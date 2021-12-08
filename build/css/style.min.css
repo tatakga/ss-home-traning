@@ -119,15 +119,34 @@
     color: #ffffff;
     border-radius: 10px; }
     .home .home__hero .search__box h1 {
-      font-size: 30px; }
+      font-size: 30px;
+      margin-bottom: 30px; }
     .home .home__hero .search__box form {
       display: flex;
       flex-direction: column; }
       @media screen and (min-width: 768px) {
         .home .home__hero .search__box form {
           flex-direction: row; } }
+    .home .home__hero .search__box .input-group-text,
     .home .home__hero .search__box select {
-      width: 100%; }
+      border-radius: 0; }
+    .home .home__hero .search__box select {
+      padding: 4px 0 4px 43px;
+      min-height: 60px; }
+    .home .home__hero .search__box .input-group-text {
+      background-color: transparent;
+      border-width: 0; }
+    .home .home__hero .search__box .input-group-prepend {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 12px;
+      z-index: 999; }
+    .home .home__hero .search__box button {
+      min-width: 150px;
+      border-radius: 0;
+      min-height: 60px; }
 
 .home .card {
   box-shadow: 1px 2px 4px #00000029; }
